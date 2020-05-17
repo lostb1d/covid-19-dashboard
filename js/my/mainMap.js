@@ -103,7 +103,7 @@ info.onAdd = function (map) {
 // method that we will use to update the control based on feature properties passed
 info.update = function (props) {
     this._div.innerHTML = '<h4>Nepal COVID 19 Information</h4>' +  (props ?
-        '<b>District : &nbsp;' + props.DIST_EN + '</b><br><b>Positive : &nbsp;</b>' + props.positive + '<br /><b>Active : &nbsp;</b>' + props.active + '<br /><b>Recovered : &nbsp;</b> ' +props.recovered + '<br /><b>Active : &nbsp;</b> ' + props.death
+        '<b>District : &nbsp;' + props.DIST_EN + '</b><br><b>Positive : &nbsp;</b>' + props.positive + '<br /><b>Active : &nbsp;</b>' + props.active + '<br /><b>Recovered : &nbsp;</b> ' +props.recovered + '<br /><b>Death(s) : &nbsp;</b> ' + props.death
         : 'Hover over a districts');
 };
 
